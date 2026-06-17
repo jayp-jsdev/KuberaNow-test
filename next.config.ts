@@ -25,9 +25,6 @@ const nextConfig: NextConfig = {
     ...extraDevOrigins,
   ],
   images: {
-    // Serve /api/media/file URLs directly on Netlify and in dev.
-    // Production image optimization stays on for non-Netlify hosts (e.g. Vercel, Node).
-    unoptimized: isDev || isNetlify,
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60 * 60 * 24 * 30,
     deviceSizes: [320, 420, 640, 768, 1024, 1280, 1536],
