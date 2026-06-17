@@ -16,6 +16,7 @@ const isDev = process.env.NODE_ENV === 'development'
 const isNetlify = process.env.NETLIFY === 'true'
 
 const nextConfig: NextConfig = {
+  outputFileTracingRoot: path.resolve(dirname),
   // Allow HMR + dev assets when accessing `next dev` through a tunnel (ngrok, etc.)
   allowedDevOrigins: [
     '*.ngrok-free.dev',
