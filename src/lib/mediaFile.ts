@@ -1,4 +1,5 @@
 import type { MongooseAdapter } from '@payloadcms/db-mongodb'
+import { isValidObjectId, toObjectId } from '@/lib/mongo/objectId'
 import type { Payload } from 'payload'
 
 async function loadMediaStorage() {
@@ -78,14 +79,9 @@ export async function batchMediaUrlsByIds(
   const collection = getMediaCollection(payload)
   if (!collection) return new Map()
 
-  const { ObjectId } = await import('mongodb')
-  const objectIds = unique.flatMap((id) => {
-    try {
-      return [new ObjectId(id)]
-    } catch {
-      return []
-    }
-  })
+  const objectIds = unique.flatMap((id) =>
+    isValidObjectId(payload, id) ? [toObjectId(payload, id)] : [],
+  )
 
   if (objectIds.length === 0) return new Map()
 
