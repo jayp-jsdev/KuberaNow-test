@@ -1,13 +1,9 @@
 import type { MongooseAdapter } from '@payloadcms/db-mongodb'
 import type { Payload } from 'payload'
-import {
-  createStoredVideoName,
-  getVideoDiskPath,
-  getVideoFileStat,
-  legacyStoredVideoName,
-  videoExistsOnDisk,
-  writeVideoToDisk,
-} from './mediaStorage'
+
+async function loadMediaStorage() {
+  return import('./mediaStorage')
+}
 
 type MediaFileRecord = {
   _id?: unknown
@@ -46,6 +42,8 @@ async function migrateLegacyVideoToDisk(
   const collection = getMediaCollection(payload)
   if (!collection || !doc._id) return null
 
+  const { legacyStoredVideoName, videoExistsOnDisk, writeVideoToDisk } =
+    await loadMediaStorage()
   const storedPath = doc.storedPath || legacyStoredVideoName(filename)
   if (!videoExistsOnDisk(storedPath)) {
     await writeVideoToDisk(storedPath, buffer)
@@ -186,14 +184,17 @@ export async function resolveMediaFileSource(
   const mimeType = doc.mimeType || 'application/octet-stream'
   const isVideo = doc.mediaKind === 'video' || mimeType.startsWith('video/')
 
-  if (isVideo && doc.storedPath && videoExistsOnDisk(doc.storedPath)) {
-    const stat = getVideoFileStat(doc.storedPath)
-    if (stat) {
-      return {
-        type: 'disk',
-        path: getVideoDiskPath(doc.storedPath),
-        mimeType,
-        size: stat.size,
+  if (isVideo && doc.storedPath) {
+    const { getVideoDiskPath, getVideoFileStat, videoExistsOnDisk } = await loadMediaStorage()
+    if (videoExistsOnDisk(doc.storedPath)) {
+      const stat = getVideoFileStat(doc.storedPath)
+      if (stat) {
+        return {
+          type: 'disk',
+          path: getVideoDiskPath(doc.storedPath),
+          mimeType,
+          size: stat.size,
+        }
       }
     }
   }
@@ -206,14 +207,17 @@ export async function resolveMediaFileSource(
 
   if (isVideo) {
     const storedPath = await migrateLegacyVideoToDisk(payload, doc, filename, decoded.buffer)
-    if (storedPath && videoExistsOnDisk(storedPath)) {
-      const stat = getVideoFileStat(storedPath)
-      if (stat) {
-        return {
-          type: 'disk',
-          path: getVideoDiskPath(storedPath),
-          mimeType: doc.mimeType || decoded.mimeType,
-          size: stat.size,
+    if (storedPath) {
+      const { getVideoDiskPath, getVideoFileStat, videoExistsOnDisk } = await loadMediaStorage()
+      if (videoExistsOnDisk(storedPath)) {
+        const stat = getVideoFileStat(storedPath)
+        if (stat) {
+          return {
+            type: 'disk',
+            path: getVideoDiskPath(storedPath),
+            mimeType: doc.mimeType || decoded.mimeType,
+            size: stat.size,
+          }
         }
       }
     }
@@ -242,5 +246,3 @@ export async function readMediaFileByFilename(
   const buffer = await readFile(source.path)
   return { buffer, mimeType: source.mimeType }
 }
-
-export { createStoredVideoName }

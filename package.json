@@ -22,6 +22,7 @@
     "@payloadcms/next": "3.84.1",
     "@payloadcms/richtext-lexical": "3.84.1",
     "@payloadcms/ui": "3.84.1",
+    "@swc/helpers": "0.5.15",
     "cross-env": "^7.0.3",
     "dotenv": "16.4.7",
     "mongoose": "8.15.1",
