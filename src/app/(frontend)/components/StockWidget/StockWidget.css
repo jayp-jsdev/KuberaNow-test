@@ -1,0 +1,87 @@
+/* Share Market stock table widget */
+.stock-tabs-v2 {
+  display: flex;
+  background-color: #f4efe7;
+  border: 1px solid var(--border);
+  padding: 2px;
+  margin-bottom: 12px;
+}
+
+.stock-tab-btn-v2 {
+  flex: 1;
+  text-align: center;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text2);
+}
+
+.stock-tab-btn-v2.active {
+  background-color: #ffffff;
+  color: var(--primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stock-table-v2 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stock-table-v2 th {
+  text-align: left;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text3);
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.stock-table-v2 td {
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.stock-table-v2 tr:last-child td {
+  border-bottom: none;
+}
+
+.stock-company-name {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.stock-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  color: var(--text);
+}
+
+.stock-change {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.stock-change.up {
+  color: var(--green);
+}
+
+.stock-change.down {
+  color: var(--red);
+}
+
+.stock-timestamp-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 12px;
+  text-align: left;
+}
+

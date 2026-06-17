@@ -1,0 +1,121 @@
+/* ─── FOOTER ─── */
+.site-footer {
+  background: var(--primary);
+  padding: 22px 24px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 500;
+}
+
+
+/* Footer Redesign */
+.footer-v2 {
+  background-color: #1a1411;
+  color: #ffffff;
+  padding: 40px 0 20px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-inner-v2 {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-grid-v2 {
+  display: grid;
+  grid-template-columns: 304px 1fr;
+  gap: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-brand-desc {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social-link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition);
+}
+
+.footer-social-link:hover {
+  color: var(--accent);
+}
+
+.footer-links-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer-link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-group-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+.footer-bottom-v2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+

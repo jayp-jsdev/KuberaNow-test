@@ -1,0 +1,169 @@
+/* ─── SHARE BAR ─── */
+.share-bar {
+  margin: 28px 0;
+  padding: 20px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.share-bar-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text2);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.share-bar-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text);
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.share-btn:hover {
+  border-color: var(--primary);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.share-btn-icon {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+}
+
+.share-btn-whatsapp:hover {
+  border-color: #25d366;
+  color: #25d366;
+}
+
+.share-btn-twitter:hover {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.share-btn-facebook:hover {
+  border-color: #1877f2;
+  color: #1877f2;
+}
+
+.share-btn-linkedin:hover {
+  border-color: #0a66c2;
+  color: #0a66c2;
+}
+
+.share-btn-copy:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+/* Share Bar */
+.share-row-v2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: transparent;
+  padding: 14px 0;
+  margin-bottom: 24px;
+}
+
+.article-share-row-v2 {
+  border-top: 1px solid var(--border);
+  padding: 14px 0 0;
+  margin-bottom: 0;
+}
+
+.share-label-v2 {
+  flex-shrink: 0;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1;
+}
+
+.social-share-buttons-v2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-share-btn-v2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg3);
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.social-share-btn-v2:hover {
+  background-color: #ebe4d8;
+  transform: translateY(-1px);
+}
+
+.social-share-btn-v2.whatsapp {
+  color: #25d366;
+}
+
+.social-share-btn-v2.x {
+  color: #111111;
+}
+
+.social-share-btn-v2.facebook {
+  color: #1877f2;
+}
+
+.social-share-btn-v2.linkedin {
+  color: #0a66c2;
+}
+
+.copy-link-btn-v2 {
+  margin-left: auto;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+
+.copy-link-btn-v2:hover {
+  background-color: var(--bg3);
+  border-color: #d8cfc0;
+}
+

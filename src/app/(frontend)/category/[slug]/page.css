@@ -1,0 +1,112 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   KUBERANOW CATEGORY PAGE STYLES
+   ────────────────────────────────────────────────────────────────────────── */
+
+.category-header-v2 {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 20px 24px;
+  margin-bottom: 4px;
+}
+
+.breadcrumb-v2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 11.5px;
+  color: var(--text3);
+}
+
+.breadcrumb-v2 a {
+  color: var(--text3);
+}
+
+.breadcrumb-v2 a:hover {
+  color: var(--primary);
+}
+
+.breadcrumb-separator {
+  color: #d2c6b3;
+}
+
+.breadcrumb-current {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.category-header-v2 .breadcrumb-v2 {
+  margin-bottom: 12px;
+}
+
+.category-title-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+
+.category-count-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 14px;
+  color: var(--text3);
+}
+
+.category-tabs-row-v2 {
+  margin-bottom: 4px;
+}
+
+.cat-tabs-v2--scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: 100%;
+  scrollbar-width: thin;
+}
+
+.cat-tabs-v2--scroll .cat-tab-v2 {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.empty-state-v2 {
+  text-align: center;
+  padding: 64px 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.empty-state-icon-v2 {
+  color: var(--text3);
+  margin-bottom: 4px;
+}
+
+.empty-state-title-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.empty-state-desc-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 14px;
+  color: var(--text2);
+  max-width: 360px;
+  line-height: 1.5;
+}
+
+.empty-state-link-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 8px;
+}

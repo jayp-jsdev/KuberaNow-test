@@ -1,0 +1,88 @@
+/* Privacy Policy (Figma-aligned blocks) */
+.privacy-policy-content {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.privacy-section-intro,
+.privacy-section-footer {
+  margin-bottom: 18px;
+}
+
+.privacy-section-footer {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.privacy-cookies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.privacy-cookie-title {
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.privacy-cookie-description {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text2);
+}
+
+.privacy-cookie-managed-by {
+  margin-top: auto;
+  padding-top: 14px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text3);
+}
+
+.privacy-grievance-details {
+  margin: 18px 0;
+  display: grid;
+  gap: 4px;
+}
+
+.privacy-grievance-row {
+  padding-bottom: 12px;
+}
+
+.privacy-grievance-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.privacy-grievance-row dt {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.privacy-grievance-row dd {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text2);
+}
+
+@media (max-width: 768px) {
+  .privacy-cookies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-grievance-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

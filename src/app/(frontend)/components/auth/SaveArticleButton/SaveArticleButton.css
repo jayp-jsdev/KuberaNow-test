@@ -1,0 +1,25 @@
+.save-article-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: var(--text2);
+  padding: 8px 14px;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.save-article-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.save-article-btn.is-saved {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: #fdf5f6;
+}

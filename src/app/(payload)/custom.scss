@@ -1,0 +1,21 @@
+/* Admin panel custom styles */
+.article-preview-banner {
+  padding: 0.75rem 1rem;
+  background: #fff3cd;
+  color: #664d03;
+  text-align: center;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #ffc107;
+}
+
+.preview-device-mobile {
+  max-width: 390px;
+  margin: 0 auto;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  min-height: 100vh;
+}
+
+.preview-device-desktop {
+  width: 100%;
+}

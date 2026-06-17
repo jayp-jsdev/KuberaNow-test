@@ -1,0 +1,182 @@
+/* ad banners */
+.ad-banner {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #2a2a35 0%, #3a2730 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.ad-tag {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.55);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.ad-leaderboard {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 14px 24px;
+}
+
+.ad-leaderboard .ad-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ad-leaderboard strong {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ad-leaderboard span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.ad-box {
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.ad-box .ad-box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ad-box strong {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.ad-box span {
+  font-size: 22px;
+  font-weight: 800;
+  color: #f3c6ce;
+}
+
+.ad-box em {
+  font-size: 12px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 6px;
+}
+
+
+/* Ad Banners */
+.ad-leaderboard-v2 {
+  background-color: #f4efe7;
+  border: 1px solid var(--border);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 110px;
+}
+
+.ad-mpu-v2 {
+  background-color: #f4efe7;
+  border: 1px solid var(--border);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 253px;
+  margin-bottom: 20px;
+}
+
+.ad-label-v2 {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: var(--text3);
+}
+
+.ad-size-v2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.ad-desc-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 10px;
+  color: var(--text3);
+}
+
+.ad-placeholder-v2 {
+  text-align: center;
+}
+
+.ad-slot-v2--image {
+  display: block;
+  padding: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.ad-slot-v2--image .ad-label-v2 {
+  top: 6px;
+  left: 10px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2px 6px;
+}
+
+.ad-image-v2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ad-leaderboard-v2.ad-slot-v2--image .ad-image-v2 {
+  height: 200px;
+}
+
+.ad-mpu-v2.ad-slot-v2--image .ad-image-link-v2 {
+  height: 250px;
+}
+
+.ad-mpu-v2.ad-slot-v2--image .ad-image-v2 {
+  height: 250px;
+}
+
+.ad-image-link-v2 {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.ad-custom-v2 {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+

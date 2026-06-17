@@ -1,0 +1,345 @@
+/* Contact Us page — aligned to Figma node 1092:9650 */
+.contact-page {
+  padding: 0 0 48px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.contact-page-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 20px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.contact-page-header {
+  margin: 0;
+}
+
+.contact-page-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-page-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-page-title-bar {
+  width: 4px;
+  height: 22px;
+  background-color: var(--primary);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.contact-page-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--text);
+}
+
+.contact-commitment-banner {
+  padding: 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--text);
+}
+
+.contact-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-cards-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-cards-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-cards-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100%;
+  padding: 24px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.contact-card-header {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.contact-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.contact-card-icon-image {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contact-card-title {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--text);
+}
+
+.contact-card-description {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text2);
+}
+
+.contact-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.contact-card-detail-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.contact-card-detail-row dt {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--text2);
+}
+
+.contact-card-detail-row dd {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text);
+  word-break: break-word;
+}
+
+.contact-card-detail-row dd.is-highlighted {
+  color: var(--primary);
+}
+
+.contact-card-footnote {
+  margin-top: auto;
+  padding-top: 8px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text2);
+}
+
+.contact-grievance {
+  background: var(--primary);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contact-grievance-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 69px;
+  padding: 40px;
+
+  .article-body p{
+    color: var(--text-lightgray);
+  }
+}
+
+.contact-grievance-title {
+  margin-bottom: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--accent);
+}
+
+.contact-grievance-description {
+  margin-bottom: 24px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+}
+
+.contact-grievance-description p {
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.contact-grievance-description p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-grievance-sla-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contact-grievance-sla-box {
+  display: flex;
+  flex: 1 1 220px;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  padding: 24px;
+  background: #832534;
+  border-radius: 6px;
+}
+
+.contact-grievance-sla-label {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #e2cdd1;
+}
+
+.contact-grievance-sla-value {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--accent);
+}
+
+.contact-grievance-sla-sub {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #e2cdd1;
+}
+
+.contact-grievance-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-grievance-detail-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #832534;
+}
+
+.contact-grievance-detail-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.contact-grievance-detail-row dt {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+}
+
+.contact-grievance-detail-row dd {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #e2cdd1;
+  word-break: break-word;
+}
+
+.contact-grievance-note {
+  margin-top: 24px;
+  padding: 16px 24px;
+  background: #832534;
+  border-radius: 6px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .contact-cards-grid--three {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cards-grid--two {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grievance-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page-panel {
+    padding: 16px;
+    gap: 28px;
+  }
+
+  .contact-grievance-inner {
+    gap: 24px;
+    padding: 24px 20px;
+  }
+
+  .contact-card-detail-row,
+  .contact-grievance-detail-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

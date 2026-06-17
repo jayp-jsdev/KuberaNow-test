@@ -1,0 +1,100 @@
+/* Morning Brief Newsletter Widget */
+/* Sidebar category news blocks */
+.sidebar-category-news-v2 {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.sidebar-category-news-header-v2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.sidebar-category-news-title-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sidebar-category-news-list-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-category-news-item-v2 {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-category-news-item-v2:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sidebar-category-news-thumb-v2 {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 54px;
+  object-fit: cover;
+  background: var(--bg3);
+}
+
+.sidebar-category-news-thumb-placeholder-v2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  background: linear-gradient(135deg, #fcefe9, #f5e2c7);
+}
+
+.sidebar-category-news-body-v2 {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-category-news-headline-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color var(--transition);
+}
+
+.sidebar-category-news-item-v2:hover .sidebar-category-news-headline-v2 {
+  color: var(--primary);
+}
+
+.sidebar-category-news-date-v2 {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 11px;
+  color: var(--text3);
+}
